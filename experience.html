@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Experience Page</title>
+  <div class="company-image">
+    <img src="tcs.jpg" alt="TCS image not found"> 
+    <img src="optum.jpg" alt="Optum Image not found"> 
+    <img src="sutherland.png" alt="Sutherland image not found">
+    </div>
+ 
+<meta charset="UTF-8">
+<title>Experience</title>
+<style>
+/* Your existing CSS styles */
+head {
+  margin: 0%;
+  padding: auto;
+}
+body {
+  font-family: Arial, sans-serif;
+  background-image: url("bgv.jpg");
+  margin: 0;
+  padding: 20px;
+  
+}
+.image-class {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0f0; /* Change this to your desired background color */
+}
+
+
+
+.experience-box {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+}
+.job-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.company {
+  font-size: 18px;
+  font-weight: bold;
+  color: #555;
+  margin-bottom: 5px;
+  cursor: pointer; /* Adding cursor pointer for clickable effect */
+}
+.employment-type {
+  font-size: 16px;
+  color: #777;
+  margin-bottom: 10px;
+}
+.duration {
+  font-size: 14px;
+  color: #999;
+  margin-bottom: 15px;
+}
+.location {
+  font-size: 16px;
+  color: #555;
+}
+.company-image {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  margin: 20px auto;
+  overflow-x: auto;
+  padding: 10px 0;
+  box-sizing: border-box;
+}
+.company-image img {
+  width: 120px;
+  height: auto;
+  border-radius: 50%;
+  margin: 0 10px;
+  transition: opacity 0.3s ease-in-out;
+  animation: blink 2s ease-in-out infinite alternate; /* Adding blinking animation */
+}
+.company-image img:hover {
+  transform: scale(1.1);
+}
+@keyframes blink {
+  0% {
+    opacity: 1; /* Start with full opacity */
+  }
+  100% {
+    opacity: 0.5; /* Toggle to half opacity */
+  }
+}
+.details {
+  display: none;
+  padding: 10px;
+  margin-top: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  list-style-type: disc;
+  padding-left: 20px;
+}
+.final {
+  text-align: center;
+}
+</style>
+</head>
+<body>
+<div class="experience-box" onclick="toggleDetails('sutherlandDetails')">
+<div class="job-title" >Salesforce Developer</div>
+<div class="company">Sutherland</div>
+<div class="employment-type">Full-time</div>
+<div class="duration">Dec 2021 - Nov 2023 · 2 yrs</div>
+<div id="sutherlandDetails" class="details" style="display: none;">
+  <ul>
+    <li>Salesforce Developer and Admin.</li>
+    <li>Apex</li> 
+    <li>Batch Apex</li>
+    <li>schedulable Apex</li>
+    <li>apex Triggers</li>
+    <li>Test Classes</li>
+    <li>lightning Flows</li>
+    <li>Automation Process</li>
+    <li>Profiles & Permission Sets</li>
+    <li>Case Management</li>
+    <li>Service Cloud</li>
+    <li>Health Cloud</li>
+  </ul>
+</div>
+</div>
+
+<div class="experience-box" onclick="toggleDetails('optumDetails')">
+<div class="job-title">Salesforce Developer</div>
+<div class="company">Optum</div>
+<div class="employment-type">Full-time</div>
+<div class="duration">Feb 2020 - Dec 2021 · 1 yr 11 mos</div>
+<div id="optumDetails" class="details" style="display: none;">
+  <ul>
+    <li>Apex</li>
+    <li>Triggers</li>
+    <li>SOSL & SOQL</li>
+    <li>Page Layouts & Record Types</li>
+    <li>Reports and Dashboards</li>
+    <li>User Management</li>
+    <li>Snow Ticket Resolution</li>
+    <li>Process Automation </li>
+    <li>Email</li>
+    <li>Flows</li>
+  </ul>
+</div>
+</div>
+
+<div class="experience-box" onclick="toggleDetails('tcsDetails')">
+<div class="job-title">Associate</div>
+<div class="company">Tata Consultancy Services</div>
+<div class="employment-type">Full-time</div>
+<div class="duration">Oct 2018 - Oct 2019 · 1 yr 1 mo</div>
+<div id="tcsDetails" class="details" style="display: none;">
+  <ul>
+    <li>Microsoft Office</li>
+    <li>Customer Relationship Management (CRM)</li>
+    <li>Salesforce.com</li>
+    <li>Business Operations</li>
+  </ul>
+</div>
+</div>
+
+
+
+<script>
+  window.alert("click on Company for more Information")
+function toggleDetails(id) {
+  const details = document.getElementById(id);
+  if (details.style.display === 'none') {
+    details.style.display = 'block';
+  } else {
+    details.style.display = 'none';
+  }
+}
+</script>
+<div class="final">
+  copy rights @Raju Banothu
+</div>
+</body>
+</html>
